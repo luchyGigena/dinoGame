@@ -62,8 +62,12 @@ body {
   height: 80px;
   bottom: 185px;
   right: 0;
+}
+
+.animatedCactus {
   animation: cactusMov 4s linear infinite;
 }
+
 #cactus img {
   max-width: 100%;
   max-height: 100%;

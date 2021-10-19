@@ -80,6 +80,8 @@ restartButton.addEventListener('click', restartGame)
 function restartGame(){
     resetScore();
     removeJump();
+    cactus.classList.remove("animatedCactus");
+    cactus.classList.add("animatedCactus");
 }
 
 
@@ -89,4 +91,11 @@ function resetScore(){
     score =0;
     document.getElementById("score").innerText =score;
 }
+
+
+document.addEventListener("keyup", (event)=>{
+    if(event.key == 'ArrowUp'){
+       playerJump();
+    }
+})
 
