@@ -55,3 +55,57 @@ body {
     background-position: -10000px 0;
   }
 }
+
+#cactus {
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  bottom: 185px;
+  right: 0;
+  animation: cactusMov 4s linear infinite;
+}
+#cactus img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@keyframes cactusMov {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+.scoreContainer {
+  text-align-last: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.button.play {
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+}
+
+.button {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+  border-color: transparent transparent transparent #202020;
+  transition: 1000ms all ease;
+  cursor: pointer;
+  border-style: double;
+  border-width: 0px 0 0px 60px;
+}
+
+.button:hover {
+  border-color: transparent transparent transparent #404040;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+}
